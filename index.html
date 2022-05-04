@@ -10,8 +10,10 @@
 
 <body>
     <script>
+        let host = "https://eudora-hsj.github.io/imgs"
+        let apiUrl = 'https://api.github.com/repos/eudora-hsj/imgs/contents/img'
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "/img", true);
+        xhr.open("GET", apiUrl, true);
         xhr.responseType = 'document';
         xhr.onload = () => {
             if (xhr.status === 200) {
